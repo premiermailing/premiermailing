@@ -1,191 +1,664 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-
-    <!-- BC_OBNW -->
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Premier Mail &amp; Fulfillment - Database Layout Specification</title>
-<link type="text/css" href="StyleSheets/ModuleStyleSheets.css" rel="StyleSheet" />
-<script type="text/javascript">var jslang='EN';</script>
-<link rel="stylesheet" type="text/css" href="stylesheets/reset.css" media="screen" />
-<link rel="stylesheet" type="text/css" href="stylesheets/premier.css" media="screen" />
-<script type="text/javascript" src="scripts/head.js"></script>
-<script type="text/javascript">head.js('https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js','https://ajax.googleapis.com/ajax/libs/jqueryui/1.5.3/jquery-ui.min.js','/scripts/jcarousellite.min.js','/scripts/scripts.js');</script>
-</head>
-<body class="full status0" id="sub">
-
-    
-        <div id="container">
-
-		<!--header-->
-       	<div id="header">
-    <div class="section">
-        <div class="header-a">
+  <!-- BC_OBNW -->
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>
+      Premier Mail &amp; Fulfillment - Database Layout Specification
+    </title>
+    <link
+      type="text/css"
+      href="StyleSheets/ModuleStyleSheets.css"
+      rel="StyleSheet"
+    />
+    <script type="text/javascript">
+      var jslang = "EN";
+    </script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="stylesheets/reset.css"
+      media="screen"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="stylesheets/premier.css"
+      media="screen"
+    />
+    <script type="text/javascript" src="scripts/head.js"></script>
+    <script type="text/javascript">
+      head.js(
+        "https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js",
+        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.5.3/jquery-ui.min.js",
+        "/scripts/jcarousellite.min.js",
+        "/scripts/scripts.js"
+      );
+    </script>
+  </head>
+  <body class="full status0" id="sub">
+    <div id="container">
+      <!--header-->
+      <div id="header">
+        <div class="section">
+          <div class="header-a">
             <a href="index.html">
-                <img alt="Premier Mail & Fulfillment" src="stylesheets/images/PremierLogo.png" width="324" height="97" />
+              <img
+                alt="Premier Mail & Fulfillment"
+                src="stylesheets/images/PremierLogo.png"
+                width="324"
+                height="97"
+              />
             </a>
-        </div>
-        <div class="header-b">
+          </div>
+          <div class="header-b">
             <div class="utils-a">
-                <div class="utils-menu"><ul><li  ><a href="location_and_form.htm">Contact Us</a></li><li  ><a href="index.html">Home</a></li></ul></div>
-                <div class="social-links"><a href="https://www.facebook.com/PremierMailFulfillment" target="_blank">
-<img src="images/premier/icon-facebook.png" alt="Facebook" width="32" height="32" />
-</a>
-<a href="https://twitter.com/PremierCincy" target="_blank">
-<img src="images/premier/icon-twitter.png" alt="Twitter" width="32" height="32" />
-</a>
-<a href="http://www.linkedin.com/company/premier-mail-&amp;-fulfillment?trk=ppro_cprof" target="_blank">
-<img src="images/premier/icon-linkedin.png" alt="LinkedIn" width="32" height="32" />
-</a></div>
+              <div class="utils-menu">
+                <ul>
+                  <li><a href="location_and_form.htm">Contact Us</a></li>
+                  <li><a href="index.html">Home</a></li>
+                </ul>
+              </div>
+              <div class="social-links">
+                <a
+                  href="https://www.facebook.com/PremierMailFulfillment"
+                  target="_blank"
+                >
+                  <img
+                    src="images/premier/icon-facebook.png"
+                    alt="Facebook"
+                    width="32"
+                    height="32"
+                  />
+                </a>
+                <a href="https://twitter.com/PremierCincy" target="_blank">
+                  <img
+                    src="images/premier/icon-twitter.png"
+                    alt="Twitter"
+                    width="32"
+                    height="32"
+                  />
+                </a>
+                <a
+                  href="http://www.linkedin.com/company/premier-mail-&amp;-fulfillment?trk=ppro_cprof"
+                  target="_blank"
+                >
+                  <img
+                    src="images/premier/icon-linkedin.png"
+                    alt="LinkedIn"
+                    width="32"
+                    height="32"
+                  />
+                </a>
+              </div>
             </div>
             <div class="utils-b">
-                <img src="images/premier/goldman-sachs-small-business.png" alt="Goldman Sachs 10,000 Small Businesses" width="177" height="54" />
+              <img
+                src="images/premier/goldman-sachs-small-business.png"
+                alt="Goldman Sachs 10,000 Small Businesses"
+                width="177"
+                height="54"
+              />
             </div>
+          </div>
         </div>
-    </div>
-</div>
-            
-       	<div id="nav"><ul><li  ><a href="about.htm">About Premier</a></li><li  ><a href="services.htm">Services</a></li><li  ><a href="news&#32;and&#32;resources.htm">News &amp; Resources</a></li><li  ><a href="location_and_form.htm">Contact</a></li><li  ><a href="request_quote.htm">Request Quote</a></li></ul></div>
-        <!-- /site nav -->
-        <div id="page">
+      </div>
+
+      <div id="nav">
+        <ul>
+          <li><a href="about.htm">About Premier</a></li>
+          <li><a href="services.htm">Services</a></li>
+          <li>
+            <a href="news&#32;and&#32;resources.htm">News &amp; Resources</a>
+          </li>
+          <li><a href="location_and_form.htm">Contact</a></li>
+          <li><a href="request_quote.htm">Request Quote</a></li>
+        </ul>
+      </div>
+      <!-- /site nav -->
+      <div id="page">
         <div class="inner-page">
-        <div class="content">
-        <div class="page-header">
-        <strong>You are here</strong>: <a  href="DB-layout.htm">Database Layout Specification</a>
-        </div>
-        <!-- /page header -->
-        
-    
-    
-        <h1>DATABASE LAYOUT SPECIFICATION</h1>
-        <br />
-        <h3><strong>In order to provide you with the fastest service possible, please provide a database following the guidelines outlined below. <em>Note:</em> It is not a problem if your database includes additional non-mailing information in separate fields.</strong></h3>
-        <br />
-        <h5> Name Information:</h5>
-        <br />
-        <p>
-        <strong> &raquo;</strong> First and last names: May be in the same or separate fields<br />
-        <br />
-        <strong> &raquo;</strong> Additional optional fields: Salutation, Suffix, Title, Company Name</p>
-        <br />
-        <h5> Address Information:</h5>
-        <br />
-        <p>
-        <br />
-        <strong> &raquo;</strong> Street address: May have two fields: delivery and alternate address field<br />
-        <br />
-        <strong> &raquo;</strong> Street address: Should be in a separate field from city, state and zip code<br />
-        <br />
-        <strong> &raquo;</strong> City, state &amp; zip code: May be one or several fields<br />
-        <br />
-        <strong> &raquo;</strong>  Include country if foreign records included<br />
-        <br />
-        </p>
-        <h5>File type accepted: </h5>
-        <br />
-        <p>Excel, comma- or tab-delimited file</p>
-        <br />
-        <h5>Sample acceptable format:</h5>
-        <br />
-        <table width="636" cellspacing="0" cellpadding="0" border="1" style="margin-left: 9.9pt; border-collapse: collapse; border-style: none;">
-        </table>
-        <table width="636" cellspacing="0" cellpadding="0" border="1" style="margin-left: 9.9pt; border-collapse: collapse; border-style: none;">
-            <tbody>
-                <tr style="height: 17.5pt;">
-                    <td style="border: 1pt solid windowtext; width: 76.5pt; background-color: #b3b3b3; padding: 0in 5.4pt; height: 17.5pt;">
-                    <p style="margin: 6pt 0in 10pt 9pt;"><strong><span style="line-height: 115%; font-size: 14px; color: #4d4d4f;">FIRST NAME</span></strong></p>
-                    </td>
-                    <td style="width: 76.5pt; border-style: solid solid solid none; border-top: 1pt solid windowtext; border-right: 1pt solid windowtext; border-bottom: 1pt solid windowtext; background-color: #b3b3b3; padding: 0in 5.4pt; height: 17.5pt;">
-                    <p style="margin: 6pt 0in 10pt 9pt;"><strong><span style="line-height: 115%; font-size: 14px; color: #4d4d4f;">LAST NAME</span></strong></p>
-                    </td>
-                    <td valign="top" style="width: 1.25in; border-style: solid solid solid none; border-top: 1pt solid windowtext; border-right: 1pt solid windowtext; border-bottom: 1pt solid windowtext; background-color: #b3b3b3; padding: 0in 5.4pt; height: 17.5pt;">
-                    <p style="margin: 6pt 0in 10pt 9pt;"><strong><span style="line-height: 115%; font-size: 14px; color: #4d4d4f;">DELIVERY</span></strong></p>
-                    </td>
-                    <td valign="top" style="width: 81pt; border-style: solid solid solid none; border-top: 1pt solid windowtext; border-right: 1pt solid windowtext; border-bottom: 1pt solid windowtext; background-color: #b3b3b3; padding: 0in 5.4pt; height: 17.5pt;">
-                    <p style="margin: 6pt 0in 10pt 9pt;"><strong><span style="line-height: 115%; font-size: 14px; color: #4d4d4f;">ALTERNATE</span></strong></p>
-                    </td>
-                    <td valign="top" style="width: 0.75in; border-style: solid solid solid none; border-top: 1pt solid windowtext; border-right: 1pt solid windowtext; border-bottom: 1pt solid windowtext; background-color: #b3b3b3; padding: 0in 5.4pt; height: 17.5pt;">
-                    <p style="margin-top: 6pt;"><strong><span style="line-height: 115%; font-size: 14px; color: #4d4d4f;">CITY</span></strong></p>
-                    </td>
-                    <td valign="top" style="width: 49.5pt; border-style: solid solid solid none; border-top: 1pt solid windowtext; border-right: 1pt solid windowtext; border-bottom: 1pt solid windowtext; background-color: #b3b3b3; padding: 0in 5.4pt; height: 17.5pt;">
-                    <p style="margin-top: 6pt;"><strong><span style="line-height: 115%; font-size: 14px; color: #4d4d4f;">STATE</span></strong></p>
-                    </td>
-                    <td valign="top" style="width: 49.5pt; border-style: solid solid solid none; border-top: 1pt solid windowtext; border-right: 1pt solid windowtext; border-bottom: 1pt solid windowtext; background-color: #b3b3b3; padding: 0in 5.4pt; height: 17.5pt;">
-                    <p style="margin-top: 6pt;"><strong><span style="line-height: 115%; font-size: 14px; color: #4d4d4f;">ZIP</span></strong></p>
-                    </td>
-                </tr>
-                <tr style="height: 19.75pt;">
-                    <td style="width: 76.5pt; border-right: 1pt solid windowtext; border-style: none solid solid; border-bottom: 1pt solid windowtext; border-left: 1pt solid windowtext; padding: 0in 5.4pt; height: 19.75pt;">
-                    <p style="margin-top: 6pt;"><span style="line-height: 115%; font-size: 14px;">John</span></p>
-                    </td>
-                    <td style="width: 76.5pt; border-style: none solid solid none; border-bottom: 1pt solid windowtext; border-right: 1pt solid windowtext; padding: 0in 5.4pt; height: 19.75pt;">
-                    <p style="margin-top: 6pt;"><span style="line-height: 115%; font-size: 14px;">Smith</span></p>
-                    </td>
-                    <td valign="top" style="width: 1.25in; border-style: none solid solid none; border-bottom: 1pt solid windowtext; border-right: 1pt solid windowtext; padding: 0in 5.4pt; height: 19.75pt;">
-                    <p style="margin-top: 6pt;"><span style="line-height: 115%; font-size: 14px;">10 Forest Drive</span></p>
-                    </td>
-                    <td valign="top" style="width: 81pt; border-style: none solid solid none; border-bottom: 1pt solid windowtext; border-right: 1pt solid windowtext; padding: 0in 5.4pt; height: 19.75pt;">
-                    <p style="margin: 6pt 0in 10pt 9pt; text-indent: 0.25in;"> </p>
-                    </td>
-                    <td valign="top" style="width: 0.75in; border-style: none solid solid none; border-bottom: 1pt solid windowtext; border-right: 1pt solid windowtext; padding: 0in 5.4pt; height: 19.75pt;">
-                    <p style="margin-top: 6pt;"><span style="line-height: 115%; font-size: 14px;">Wilton</span></p>
-                    </td>
-                    <td valign="top" style="width: 49.5pt; border-style: none solid solid none; border-bottom: 1pt solid windowtext; border-right: 1pt solid windowtext; padding: 0in 5.4pt; height: 19.75pt;">
-                    <p style="margin-top: 6pt;"><span style="line-height: 115%; font-size: 14px;">CT</span></p>
-                    </td>
-                    <td valign="top" style="width: 49.5pt; border-style: none solid solid none; border-bottom: 1pt solid windowtext; border-right: 1pt solid windowtext; padding: 0in 5.4pt; height: 19.75pt;">
-                    <p style="margin-top: 6pt;"><span style="line-height: 115%; font-size: 14px;">06897</span></p>
-                    </td>
-                </tr>
-                <tr style="height: 17.05pt;">
-                    <td style="width: 76.5pt; border-right: 1pt solid windowtext; border-style: none solid solid; border-bottom: 1pt solid windowtext; border-left: 1pt solid windowtext; padding: 0in 5.4pt; height: 17.05pt;">
-                    <p style="margin-top: 6pt;"><span style="line-height: 115%; font-size: 14px;">Mary</span></p>
-                    </td>
-                    <td style="width: 76.5pt; border-style: none solid solid none; border-bottom: 1pt solid windowtext; border-right: 1pt solid windowtext; padding: 0in 5.4pt; height: 17.05pt;">
-                    <p style="margin-top: 6pt;"><span style="line-height: 115%; font-size: 14px;">Masterson</span></p>
-                    </td>
-                    <td valign="top" style="width: 1.25in; border-style: none solid solid none; border-bottom: 1pt solid windowtext; border-right: 1pt solid windowtext; padding: 0in 5.4pt; height: 17.05pt;">
-                    <p style="margin-top: 6pt;"><span style="line-height: 115%; font-size: 14px;">12 Front Street</span></p>
-                    </td>
-                    <td valign="top" style="width: 81pt; border-style: none solid solid none; border-bottom: 1pt solid windowtext; border-right: 1pt solid windowtext; padding: 0in 5.4pt; height: 17.05pt;">
-                    <p style="margin-top: 6pt;"><span style="line-height: 115%; font-size: 14px;">Suite 200</span></p>
-                    </td>
-                    <td valign="top" style="width: 0.75in; border-style: none solid solid none; border-bottom: 1pt solid windowtext; border-right: 1pt solid windowtext; padding: 0in 5.4pt; height: 17.05pt;">
-                    <p style="margin-top: 6pt;"><span style="line-height: 115%; font-size: 14px;">Cincinnati</span></p>
-                    </td>
-                    <td valign="top" style="width: 49.5pt; border-style: none solid solid none; border-bottom: 1pt solid windowtext; border-right: 1pt solid windowtext; padding: 0in 5.4pt; height: 17.05pt;">
-                    <p style="margin-top: 6pt;"><span style="line-height: 115%; font-size: 14px;">OH</span></p>
-                    </td>
-                    <td valign="top" style="width: 49.5pt; border-style: none solid solid none; border-bottom: 1pt solid windowtext; border-right: 1pt solid windowtext; padding: 0in 5.4pt; height: 17.05pt;">
-                    <p style="margin-top: 6pt;"><span style="line-height: 115%; font-size: 14px;">45241</span></p>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <p style="text-align: justify;"><em> </em></p>
-        <p style="margin-top: 3.36pt; margin-bottom: 0pt; margin-left: 0in; text-indent: 0in; text-align: left; direction: ltr; unicode-bidi: embed;"><span style="line-height: 27px; font-size: 14px; font-family: arial; color: #4d4d4f;"></span></p>
-    
+          <div class="content">
+            <div class="page-header">
+              <strong>You are here</strong>:
+              <a href="DB-layout.htm">Database Layout Specification</a>
+            </div>
+            <!-- /page header -->
 
+            <h1>DATABASE LAYOUT SPECIFICATION</h1>
+            <br />
+            <h3>
+              <strong
+                >In order to provide you with the fastest service possible,
+                please provide a database following the guidelines outlined
+                below. <em>Note:</em> It is not a problem if your database
+                includes additional non-mailing information in separate
+                fields.</strong
+              >
+            </h3>
+            <br />
+            <h5>Name Information:</h5>
+            <br />
+            <p>
+              <strong> &raquo;</strong> First and last names: May be in the same
+              or separate fields<br />
+              <br />
+              <strong> &raquo;</strong> Additional optional fields: Salutation,
+              Suffix, Title, Company Name
+            </p>
+            <br />
+            <h5>Address Information:</h5>
+            <br />
+            <p>
+              <br />
+              <strong> &raquo;</strong> Street address: May have two fields:
+              delivery and alternate address field<br />
+              <br />
+              <strong> &raquo;</strong> Street address: Should be in a separate
+              field from city, state and zip code<br />
+              <br />
+              <strong> &raquo;</strong> City, state &amp; zip code: May be one
+              or several fields<br />
+              <br />
+              <strong> &raquo;</strong> Include country if foreign records
+              included<br />
+              <br />
+            </p>
+            <h5>File type accepted:</h5>
+            <br />
+            <p>Excel, comma- or tab-delimited file</p>
+            <br />
+            <h5>Sample acceptable format:</h5>
+            <br />
+            <table
+              width="636"
+              cellspacing="0"
+              cellpadding="0"
+              border="1"
+              style="
+                margin-left: 9.9pt;
+                border-collapse: collapse;
+                border-style: none;
+              "
+            ></table>
+            <table
+              width="636"
+              cellspacing="0"
+              cellpadding="0"
+              border="1"
+              style="
+                margin-left: 9.9pt;
+                border-collapse: collapse;
+                border-style: none;
+              "
+            >
+              <tbody>
+                <tr style="height: 17.5pt">
+                  <td
+                    style="
+                      border: 1pt solid windowtext;
+                      width: 76.5pt;
+                      background-color: #b3b3b3;
+                      padding: 0in 5.4pt;
+                      height: 17.5pt;
+                    "
+                  >
+                    <p style="margin: 6pt 0in 10pt 9pt">
+                      <strong
+                        ><span
+                          style="
+                            line-height: 115%;
+                            font-size: 14px;
+                            color: #4d4d4f;
+                          "
+                          >FIRST NAME</span
+                        ></strong
+                      >
+                    </p>
+                  </td>
+                  <td
+                    style="
+                      width: 76.5pt;
+                      border-style: solid solid solid none;
+                      border-top: 1pt solid windowtext;
+                      border-right: 1pt solid windowtext;
+                      border-bottom: 1pt solid windowtext;
+                      background-color: #b3b3b3;
+                      padding: 0in 5.4pt;
+                      height: 17.5pt;
+                    "
+                  >
+                    <p style="margin: 6pt 0in 10pt 9pt">
+                      <strong
+                        ><span
+                          style="
+                            line-height: 115%;
+                            font-size: 14px;
+                            color: #4d4d4f;
+                          "
+                          >LAST NAME</span
+                        ></strong
+                      >
+                    </p>
+                  </td>
+                  <td
+                    valign="top"
+                    style="
+                      width: 1.25in;
+                      border-style: solid solid solid none;
+                      border-top: 1pt solid windowtext;
+                      border-right: 1pt solid windowtext;
+                      border-bottom: 1pt solid windowtext;
+                      background-color: #b3b3b3;
+                      padding: 0in 5.4pt;
+                      height: 17.5pt;
+                    "
+                  >
+                    <p style="margin: 6pt 0in 10pt 9pt">
+                      <strong
+                        ><span
+                          style="
+                            line-height: 115%;
+                            font-size: 14px;
+                            color: #4d4d4f;
+                          "
+                          >DELIVERY</span
+                        ></strong
+                      >
+                    </p>
+                  </td>
+                  <td
+                    valign="top"
+                    style="
+                      width: 81pt;
+                      border-style: solid solid solid none;
+                      border-top: 1pt solid windowtext;
+                      border-right: 1pt solid windowtext;
+                      border-bottom: 1pt solid windowtext;
+                      background-color: #b3b3b3;
+                      padding: 0in 5.4pt;
+                      height: 17.5pt;
+                    "
+                  >
+                    <p style="margin: 6pt 0in 10pt 9pt">
+                      <strong
+                        ><span
+                          style="
+                            line-height: 115%;
+                            font-size: 14px;
+                            color: #4d4d4f;
+                          "
+                          >ALTERNATE</span
+                        ></strong
+                      >
+                    </p>
+                  </td>
+                  <td
+                    valign="top"
+                    style="
+                      width: 0.75in;
+                      border-style: solid solid solid none;
+                      border-top: 1pt solid windowtext;
+                      border-right: 1pt solid windowtext;
+                      border-bottom: 1pt solid windowtext;
+                      background-color: #b3b3b3;
+                      padding: 0in 5.4pt;
+                      height: 17.5pt;
+                    "
+                  >
+                    <p style="margin-top: 6pt">
+                      <strong
+                        ><span
+                          style="
+                            line-height: 115%;
+                            font-size: 14px;
+                            color: #4d4d4f;
+                          "
+                          >CITY</span
+                        ></strong
+                      >
+                    </p>
+                  </td>
+                  <td
+                    valign="top"
+                    style="
+                      width: 49.5pt;
+                      border-style: solid solid solid none;
+                      border-top: 1pt solid windowtext;
+                      border-right: 1pt solid windowtext;
+                      border-bottom: 1pt solid windowtext;
+                      background-color: #b3b3b3;
+                      padding: 0in 5.4pt;
+                      height: 17.5pt;
+                    "
+                  >
+                    <p style="margin-top: 6pt">
+                      <strong
+                        ><span
+                          style="
+                            line-height: 115%;
+                            font-size: 14px;
+                            color: #4d4d4f;
+                          "
+                          >STATE</span
+                        ></strong
+                      >
+                    </p>
+                  </td>
+                  <td
+                    valign="top"
+                    style="
+                      width: 49.5pt;
+                      border-style: solid solid solid none;
+                      border-top: 1pt solid windowtext;
+                      border-right: 1pt solid windowtext;
+                      border-bottom: 1pt solid windowtext;
+                      background-color: #b3b3b3;
+                      padding: 0in 5.4pt;
+                      height: 17.5pt;
+                    "
+                  >
+                    <p style="margin-top: 6pt">
+                      <strong
+                        ><span
+                          style="
+                            line-height: 115%;
+                            font-size: 14px;
+                            color: #4d4d4f;
+                          "
+                          >ZIP</span
+                        ></strong
+                      >
+                    </p>
+                  </td>
+                </tr>
+                <tr style="height: 19.75pt">
+                  <td
+                    style="
+                      width: 76.5pt;
+                      border-right: 1pt solid windowtext;
+                      border-style: none solid solid;
+                      border-bottom: 1pt solid windowtext;
+                      border-left: 1pt solid windowtext;
+                      padding: 0in 5.4pt;
+                      height: 19.75pt;
+                    "
+                  >
+                    <p style="margin-top: 6pt">
+                      <span style="line-height: 115%; font-size: 14px"
+                        >John</span
+                      >
+                    </p>
+                  </td>
+                  <td
+                    style="
+                      width: 76.5pt;
+                      border-style: none solid solid none;
+                      border-bottom: 1pt solid windowtext;
+                      border-right: 1pt solid windowtext;
+                      padding: 0in 5.4pt;
+                      height: 19.75pt;
+                    "
+                  >
+                    <p style="margin-top: 6pt">
+                      <span style="line-height: 115%; font-size: 14px"
+                        >Smith</span
+                      >
+                    </p>
+                  </td>
+                  <td
+                    valign="top"
+                    style="
+                      width: 1.25in;
+                      border-style: none solid solid none;
+                      border-bottom: 1pt solid windowtext;
+                      border-right: 1pt solid windowtext;
+                      padding: 0in 5.4pt;
+                      height: 19.75pt;
+                    "
+                  >
+                    <p style="margin-top: 6pt">
+                      <span style="line-height: 115%; font-size: 14px"
+                        >10 Forest Drive</span
+                      >
+                    </p>
+                  </td>
+                  <td
+                    valign="top"
+                    style="
+                      width: 81pt;
+                      border-style: none solid solid none;
+                      border-bottom: 1pt solid windowtext;
+                      border-right: 1pt solid windowtext;
+                      padding: 0in 5.4pt;
+                      height: 19.75pt;
+                    "
+                  >
+                    <p
+                      style="margin: 6pt 0in 10pt 9pt; text-indent: 0.25in"
+                    ></p>
+                  </td>
+                  <td
+                    valign="top"
+                    style="
+                      width: 0.75in;
+                      border-style: none solid solid none;
+                      border-bottom: 1pt solid windowtext;
+                      border-right: 1pt solid windowtext;
+                      padding: 0in 5.4pt;
+                      height: 19.75pt;
+                    "
+                  >
+                    <p style="margin-top: 6pt">
+                      <span style="line-height: 115%; font-size: 14px"
+                        >Wilton</span
+                      >
+                    </p>
+                  </td>
+                  <td
+                    valign="top"
+                    style="
+                      width: 49.5pt;
+                      border-style: none solid solid none;
+                      border-bottom: 1pt solid windowtext;
+                      border-right: 1pt solid windowtext;
+                      padding: 0in 5.4pt;
+                      height: 19.75pt;
+                    "
+                  >
+                    <p style="margin-top: 6pt">
+                      <span style="line-height: 115%; font-size: 14px">CT</span>
+                    </p>
+                  </td>
+                  <td
+                    valign="top"
+                    style="
+                      width: 49.5pt;
+                      border-style: none solid solid none;
+                      border-bottom: 1pt solid windowtext;
+                      border-right: 1pt solid windowtext;
+                      padding: 0in 5.4pt;
+                      height: 19.75pt;
+                    "
+                  >
+                    <p style="margin-top: 6pt">
+                      <span style="line-height: 115%; font-size: 14px"
+                        >06897</span
+                      >
+                    </p>
+                  </td>
+                </tr>
+                <tr style="height: 17.05pt">
+                  <td
+                    style="
+                      width: 76.5pt;
+                      border-right: 1pt solid windowtext;
+                      border-style: none solid solid;
+                      border-bottom: 1pt solid windowtext;
+                      border-left: 1pt solid windowtext;
+                      padding: 0in 5.4pt;
+                      height: 17.05pt;
+                    "
+                  >
+                    <p style="margin-top: 6pt">
+                      <span style="line-height: 115%; font-size: 14px"
+                        >Mary</span
+                      >
+                    </p>
+                  </td>
+                  <td
+                    style="
+                      width: 76.5pt;
+                      border-style: none solid solid none;
+                      border-bottom: 1pt solid windowtext;
+                      border-right: 1pt solid windowtext;
+                      padding: 0in 5.4pt;
+                      height: 17.05pt;
+                    "
+                  >
+                    <p style="margin-top: 6pt">
+                      <span style="line-height: 115%; font-size: 14px"
+                        >Masterson</span
+                      >
+                    </p>
+                  </td>
+                  <td
+                    valign="top"
+                    style="
+                      width: 1.25in;
+                      border-style: none solid solid none;
+                      border-bottom: 1pt solid windowtext;
+                      border-right: 1pt solid windowtext;
+                      padding: 0in 5.4pt;
+                      height: 17.05pt;
+                    "
+                  >
+                    <p style="margin-top: 6pt">
+                      <span style="line-height: 115%; font-size: 14px"
+                        >12 Front Street</span
+                      >
+                    </p>
+                  </td>
+                  <td
+                    valign="top"
+                    style="
+                      width: 81pt;
+                      border-style: none solid solid none;
+                      border-bottom: 1pt solid windowtext;
+                      border-right: 1pt solid windowtext;
+                      padding: 0in 5.4pt;
+                      height: 17.05pt;
+                    "
+                  >
+                    <p style="margin-top: 6pt">
+                      <span style="line-height: 115%; font-size: 14px"
+                        >Suite 200</span
+                      >
+                    </p>
+                  </td>
+                  <td
+                    valign="top"
+                    style="
+                      width: 0.75in;
+                      border-style: none solid solid none;
+                      border-bottom: 1pt solid windowtext;
+                      border-right: 1pt solid windowtext;
+                      padding: 0in 5.4pt;
+                      height: 17.05pt;
+                    "
+                  >
+                    <p style="margin-top: 6pt">
+                      <span style="line-height: 115%; font-size: 14px"
+                        >Cincinnati</span
+                      >
+                    </p>
+                  </td>
+                  <td
+                    valign="top"
+                    style="
+                      width: 49.5pt;
+                      border-style: none solid solid none;
+                      border-bottom: 1pt solid windowtext;
+                      border-right: 1pt solid windowtext;
+                      padding: 0in 5.4pt;
+                      height: 17.05pt;
+                    "
+                  >
+                    <p style="margin-top: 6pt">
+                      <span style="line-height: 115%; font-size: 14px">OH</span>
+                    </p>
+                  </td>
+                  <td
+                    valign="top"
+                    style="
+                      width: 49.5pt;
+                      border-style: none solid solid none;
+                      border-bottom: 1pt solid windowtext;
+                      border-right: 1pt solid windowtext;
+                      padding: 0in 5.4pt;
+                      height: 17.05pt;
+                    "
+                  >
+                    <p style="margin-top: 6pt">
+                      <span style="line-height: 115%; font-size: 14px"
+                        >45241</span
+                      >
+                    </p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <p style="text-align: justify"><em> </em></p>
+            <p
+              style="
+                margin-top: 3.36pt;
+                margin-bottom: 0pt;
+                margin-left: 0in;
+                text-indent: 0in;
+                text-align: left;
+                direction: ltr;
+                unicode-bidi: embed;
+              "
+            >
+              <span
+                style="
+                  line-height: 27px;
+                  font-size: 14px;
+                  font-family: arial;
+                  color: #4d4d4f;
+                "
+              ></span>
+            </p>
 
-        <div></div>
-        <!-- /editable -->
+            <div></div>
+            <!-- /editable -->
+          </div>
+          <!-- /content -->
         </div>
-        <!-- /content -->
-        </div>
-        </div>
-        <!-- /page -->
-        </div>
-        <!-- /container -->
-        <div id="footer">
-        <div class="section ft-bottom">
-        <ul><li  ><a href="about.htm">About Premier</a></li><li  ><a href="services.htm">Services</a></li><li  ><a href="news&#32;and&#32;resources.htm">News &amp; Resources</a></li><li  ><a href="location_and_form.htm">Contact</a></li><li  ><a href="request_quote.htm">Request Quote</a></li></ul>
+      </div>
+      <!-- /page -->
+    </div>
+    <!-- /container -->
+    <div id="footer">
+      <div class="section ft-bottom">
+        <ul>
+          <li><a href="about.htm">About Premier</a></li>
+          <li><a href="services.htm">Services</a></li>
+          <li>
+            <a href="news&#32;and&#32;resources.htm">News &amp; Resources</a>
+          </li>
+          <li><a href="location_and_form.htm">Contact</a></li>
+          <li><a href="request_quote.htm">Request Quote</a></li>
+        </ul>
         <!-- /footer nav -->
-        <p style="text-align: justify;"> </p>
-<center>2021 Premier Mailing and Fulfillment | 9933 Alliance Road | Cincinnati, OH 45242 | 513.948.1333</center>
-        </div>
-        <!-- /footer-content -->
-        </div>
-        <!-- /footer -->
-    
-</body>
+        <p style="text-align: justify"></p>
+        <center>
+          2021 Premier Mailing and Fulfillment | 8005 Plainfield Road, Suite 22
+          | Cincinnati, OH 45242 | 513.948.1333
+        </center>
+      </div>
+      <!-- /footer-content -->
+    </div>
+    <!-- /footer -->
+  </body>
 </html>
